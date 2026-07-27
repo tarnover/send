@@ -105,6 +105,7 @@ totalSize = Total size: { $size }
 # the next line after the colon contains a file name
 copyLinkDescription = Copy the link to share your file:
 copyLinkButton = Copy link
+emailLinkButton = Email link
 downloadTitle = Download files
 downloadDescription = This file was shared via { -send-brand } with end-to-end encryption and a link that automatically expires.
 trySendDescription = Try { -send-brand } for simple, safe file sharing.

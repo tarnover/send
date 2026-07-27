@@ -13,6 +13,7 @@ module.exports = {
     FOOTER_CLI_URL: config.footer_cli_url,
     FOOTER_DMCA_URL: config.footer_dmca_url,
     FOOTER_SOURCE_URL: config.footer_source_url,
+    EMAIL_SHARE: config.email_share,
     CUSTOM_FOOTER_TEXT: config.custom_footer_text,
     CUSTOM_FOOTER_URL: config.custom_footer_url,
     MAIN_NOTICE_HTML: config.main_notice_html,

@@ -5,9 +5,7 @@ const qr = require('./qr');
 module.exports = function(name, url) {
   const dialog = function(state, emit, close) {
     return html`
-      <send-copy-dialog
-        class="flex flex-col items-center text-center"
-      >
+      <send-copy-dialog class="flex flex-col items-center text-center">
         <h1 class="snd-display" style="margin-bottom:16px">
           ${state.translate('notifyUploadEncryptDone')}
         </h1>
@@ -31,6 +29,20 @@ module.exports = function(name, url) {
         >
           ${state.translate('copyLinkButton')}
         </button>
+        ${state.WEB_UI && state.WEB_UI.EMAIL_SHARE
+          ? html`
+              <a
+                class="snd-btn snd-btn--ghost snd-btn--full"
+                style="margin-top:12px"
+                href="mailto:?subject=${encodeURIComponent(
+                  name
+                )}&body=${encodeURIComponent(url)}"
+                title="${state.translate('emailLinkButton')}"
+              >
+                ${state.translate('emailLinkButton')}
+              </a>
+            `
+          : ''}
         <button
           class="snd-btn snd-btn--ghost snd-text-mute"
           style="margin-top:12px"
