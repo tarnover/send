@@ -249,6 +249,11 @@ const conf = convict({
     default: 'https://github.com/tarnover/snd',
     env: 'SEND_FOOTER_SOURCE_URL'
   },
+  email_share: {
+    format: Boolean,
+    default: false,
+    env: 'SEND_EMAIL_SHARE'
+  },
   custom_footer_text: {
     format: String,
     default: '',

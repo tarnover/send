@@ -121,6 +121,7 @@ See the table below for the variables and their default values.
 | UI_CUSTOM_CSS | | Allows you to define a custom CSS file for custom styling |
 | CUSTOM_FOOTER_TEXT | | Allows you to define a custom footer |
 | CUSTOM_FOOTER_URL | | Allows you to define a custom URL in your footer |
+| SEND_EMAIL_SHARE | false | Shows an "Email link" button in the share dialog that opens the user's default mail client. The link (including its secret key) ends up in a plaintext email. |
 
 Side note: If you define a custom URL and a custom footer, only the footer text will display, but will be hyperlinked to the URL.
 
